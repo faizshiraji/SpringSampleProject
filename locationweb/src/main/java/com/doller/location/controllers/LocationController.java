@@ -87,8 +87,8 @@ public class LocationController {
 	@RequestMapping("/generateReport")
 	public String generateReport() {
 		String path = sc.getRealPath("/");
-		List<Object[]> data = repository.findTypeAndTypeCount();
-		reportUtil.generatePieChart(path, data);
+		List<Object[]> dataa = repository.findByTypeAndTypeCount();
+		reportUtil.generatePieChart(path, dataa);
 		return "report";
 
 	}
