@@ -8,7 +8,7 @@ import javax.persistence.OneToOne;
 //@Table(name = "reservation")
 public class Reservation extends AbstractEntity{
 
-	private Boolean checkedId;
+	private Boolean checkedIn;
 	private int numberOfBags;
 	
 	@OneToOne
@@ -17,11 +17,11 @@ public class Reservation extends AbstractEntity{
 	@OneToOne
 	private Flight flight;
 
-	public Boolean getCheckedId() {
-		return checkedId;
+	public Boolean getCheckedIn() {
+		return checkedIn;
 	}
-	public void setCheckedId(Boolean checkedId) {
-		this.checkedId = checkedId;
+	public void setCheckedIn(Boolean checkedIn) {
+		this.checkedIn = checkedIn;
 	}
 	public int getNumberOfBags() {
 		return numberOfBags;
