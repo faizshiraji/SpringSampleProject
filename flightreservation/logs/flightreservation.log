@@ -46,3 +46,102 @@
 2020-04-30 04:08:28 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-04-30 04:08:28 - HikariPool-1 - Shutdown initiated...
 2020-04-30 04:08:28 - HikariPool-1 - Shutdown completed.
+2020-04-30 13:14:28 - Starting FlightreservationApplication on Doller-LNV with PID 20728 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-04-30 13:14:28 - No active profile set, falling back to default profiles: default
+2020-04-30 13:14:29 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-30 13:14:29 - Finished Spring Data repository scanning in 124ms. Found 4 JPA repository interfaces.
+2020-04-30 13:14:30 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 13:14:30 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-30 13:14:30 - Starting service [Tomcat]
+2020-04-30 13:14:30 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 13:14:30 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-04-30 13:14:30 - Initializing Spring embedded WebApplicationContext
+2020-04-30 13:14:30 - Root WebApplicationContext: initialization completed in 2088 ms
+2020-04-30 13:14:30 - HikariPool-1 - Starting...
+2020-04-30 13:14:31 - HikariPool-1 - Start completed.
+2020-04-30 13:14:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-30 13:14:31 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-30 13:14:31 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-30 13:14:31 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-04-30 13:14:32 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-30 13:14:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 13:14:33 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-30 13:14:33 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 13:14:33 - Adding welcome page: ServletContext resource [/index.html]
+2020-04-30 13:14:33 - Starting ProtocolHandler ["http-nio-8080"]
+2020-04-30 13:14:33 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-04-30 13:14:34 - Started FlightreservationApplication in 6.266 seconds (JVM running for 8.29)
+2020-04-30 13:15:30 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 13:15:30 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 13:15:30 - Completed initialization in 13 ms
+2020-04-30 13:15:35 - Inside showLoginPage()
+2020-04-30 13:15:52 - Inside login() and the email is: faiz@shiraji.me
+2020-04-30 13:16:01 - Inside findFlights() From:AUS TO:NYCDeparture Date: Mon Feb 05 00:00:00 BDT 2018
+2020-04-30 13:16:01 - Flight Found are: [Flight [flightNumber=AA1, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 03:14:07.0], Flight [flightNumber=AA2, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 05:14:07.0], Flight [flightNumber=AA3, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 06:14:07.0], Flight [flightNumber=SW1, operatingAirlines=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 07:14:07.0]]
+2020-04-30 13:16:03 - showCompleteReservation() invoked with the Flight Id: 4
+2020-04-30 13:16:03 - Flight is: Flight [flightNumber=SW1, operatingAirlines=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 07:14:07.0]
+2020-04-30 13:16:35 - completeReservation() ReservationRequest [flightId=4, passengerFirstName=Faiz, passengerLastName=Doller, passengerEmail=faiz@shiraji.me, passengerPhone=01791631664, nameOnTheCard=111, cardNumber=111, expirationDate=111, securityCode=111]
+2020-04-30 13:16:35 - Inside bookFlight()
+2020-04-30 13:16:35 - Fetching flight for flight Id: 4
+2020-04-30 13:16:35 - Saving the passenger: com.doller.flightreservation.entities.Passenger@2c6a8edf
+2020-04-30 13:16:35 - Saving the reservation: com.doller.flightreservation.entities.Reservation@755d4f32
+2020-04-30 13:16:35 - Generating the itinerary
+2020-04-30 13:16:35 - generateItinerary()
+2020-04-30 13:16:36 - Emailing the Itinerary
+2020-04-30 13:16:36 - Inside sendItinerary()
+2020-04-30 13:20:46 - Inside showLoginPage()
+2020-04-30 13:20:55 - Inside login() and the email is: faiz@shiraji.me
+2020-04-30 13:21:03 - Inside findFlights() From:AUS TO:NYCDeparture Date: Mon Feb 05 00:00:00 BDT 2018
+2020-04-30 13:21:03 - Flight Found are: [Flight [flightNumber=AA1, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 03:14:07.0], Flight [flightNumber=AA2, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 05:14:07.0], Flight [flightNumber=AA3, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 06:14:07.0], Flight [flightNumber=SW1, operatingAirlines=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 07:14:07.0]]
+2020-04-30 13:21:06 - showCompleteReservation() invoked with the Flight Id: 4
+2020-04-30 13:21:06 - Flight is: Flight [flightNumber=SW1, operatingAirlines=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 07:14:07.0]
+2020-04-30 13:21:29 - completeReservation() ReservationRequest [flightId=4, passengerFirstName=Faiz, passengerLastName=Doller, passengerEmail=faiz@shiraji.me, passengerPhone=01791631664, nameOnTheCard=111, cardNumber=111, expirationDate=111, securityCode=111]
+2020-04-30 13:21:29 - Inside bookFlight()
+2020-04-30 13:21:29 - Fetching flight for flight Id: 4
+2020-04-30 13:21:29 - Saving the passenger: com.doller.flightreservation.entities.Passenger@4a0c394b
+2020-04-30 13:21:29 - Saving the reservation: com.doller.flightreservation.entities.Reservation@55b93135
+2020-04-30 13:21:29 - Generating the itinerary
+2020-04-30 13:21:29 - generateItinerary()
+2020-04-30 13:21:29 - Emailing the Itinerary
+2020-04-30 13:21:29 - Inside sendItinerary()
+2020-04-30 13:22:56 - Application shutdown requested.
+2020-04-30 13:22:56 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 13:22:56 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 13:22:56 - HikariPool-1 - Shutdown initiated...
+2020-04-30 13:22:56 - HikariPool-1 - Shutdown completed.
+2020-04-30 13:27:41 - Starting FlightreservationApplication on Doller-LNV with PID 22844 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-04-30 13:27:41 - No active profile set, falling back to default profiles: default
+2020-04-30 13:27:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-30 13:27:42 - Finished Spring Data repository scanning in 92ms. Found 4 JPA repository interfaces.
+2020-04-30 13:27:42 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 13:27:42 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-30 13:27:42 - Starting service [Tomcat]
+2020-04-30 13:27:42 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 13:27:43 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-04-30 13:27:43 - Initializing Spring embedded WebApplicationContext
+2020-04-30 13:27:43 - Root WebApplicationContext: initialization completed in 2049 ms
+2020-04-30 13:27:43 - HikariPool-1 - Starting...
+2020-04-30 13:27:43 - HikariPool-1 - Start completed.
+2020-04-30 13:27:43 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-30 13:27:44 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-30 13:27:44 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-30 13:27:44 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-04-30 13:27:45 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-30 13:27:45 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 13:27:46 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-30 13:27:46 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 13:27:46 - Adding welcome page: ServletContext resource [/index.html]
+2020-04-30 13:27:46 - Starting ProtocolHandler ["http-nio-8080"]
+2020-04-30 13:27:46 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-04-30 13:27:46 - Started FlightreservationApplication in 6.089 seconds (JVM running for 7.699)
+2020-04-30 13:28:40 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 13:28:40 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 13:28:40 - Completed initialization in 18 ms
+2020-04-30 13:28:40 - Inside findReservation() for id:24
+2020-04-30 13:28:47 - Inside the updateReservation() for com.doller.flightreservation.dto.ReservationUpdateRequest@5b29477c
+2020-04-30 13:28:47 - Saving Reservation
+2020-04-30 13:36:00 - Application shutdown requested.
+2020-04-30 13:36:00 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 13:36:00 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 13:36:00 - HikariPool-1 - Shutdown initiated...
+2020-04-30 13:36:00 - HikariPool-1 - Shutdown completed.
