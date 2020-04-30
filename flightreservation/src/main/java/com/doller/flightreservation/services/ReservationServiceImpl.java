@@ -3,6 +3,7 @@ package com.doller.flightreservation.services;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.doller.flightreservation.dto.ReservationRequest;
@@ -18,6 +19,9 @@ import com.doller.flightreservation.util.PDFGenerator;
 @Service
 public class ReservationServiceImpl implements ReservationService {
  
+	@Value("${com.doller.flightreservation.itinarary.dirpath}")
+	private String ITINERARY_DIR;
+
 	@Autowired
 	FlightRepository flightRepository;
 
@@ -62,7 +66,7 @@ public class ReservationServiceImpl implements ReservationService {
 		LOGGER.info("Saving the reservation: " + reservation);
 		Reservation savedReservation = reservationRepository.save(reservation);
 
-		String filePath = "C:/Users/dolow/git/SpringTTLProject/flightreservation/pdfs/" + "doller_reservation_pdfs_"
+		String filePath = ITINERARY_DIR + "doller_reservation_pdfs_"
 				+ savedReservation.getId() + ".pdf";
 		LOGGER.info("Generating the itinerary");
 		pdfGenerator.generateItinerary(savedReservation, filePath);
