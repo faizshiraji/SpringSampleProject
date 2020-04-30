@@ -1,0 +1,46 @@
+2020-04-30 02:09:00.895  INFO 8432 --- [main] c.d.f.FlightreservationApplication       : Starting FlightreservationApplication on Doller-LNV with PID 8432 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-04-30 02:09:00.899  INFO 8432 --- [main] c.d.f.FlightreservationApplication       : No active profile set, falling back to default profiles: default
+2020-04-30 02:09:01.959  INFO 8432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-30 02:09:02.087  INFO 8432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114ms. Found 4 JPA repository interfaces.
+2020-04-30 02:09:02.951  INFO 8432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-30 02:09:02.967  INFO 8432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-30 02:09:02.972  INFO 8432 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 02:09:03.490  INFO 8432 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-04-30 02:09:03.490  INFO 8432 --- [main] o.a.c.c.C.[.[.[/flightreservation]       : Initializing Spring embedded WebApplicationContext
+2020-04-30 02:09:03.505  INFO 8432 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2544 ms
+2020-04-30 02:09:03.706  INFO 8432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-30 02:09:03.928  INFO 8432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-30 02:09:04.007  INFO 8432 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-30 02:09:04.270  INFO 8432 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-30 02:09:04.555  INFO 8432 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-30 02:09:04.787  INFO 8432 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-04-30 02:09:05.979  INFO 8432 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-30 02:09:05.994  INFO 8432 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 02:09:06.745  WARN 8432 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-30 02:09:06.930  INFO 8432 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 02:09:07.015  INFO 8432 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2020-04-30 02:09:07.246  INFO 8432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-04-30 02:09:07.246  INFO 8432 --- [main] c.d.f.FlightreservationApplication       : Started FlightreservationApplication in 7.115 seconds (JVM running for 11.852)
+2020-04-30 02:09:43.652  INFO 8432 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/flightreservation]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 02:09:43.655  INFO 8432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-30 02:09:43.675  INFO 8432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-04-30 02:09:43.736  INFO 8432 --- [http-nio-8080-exec-1] c.d.f.controllers.UserController         : Inside showLoginPage()
+2020-04-30 02:09:57.038  INFO 8432 --- [http-nio-8080-exec-4] c.d.f.controllers.UserController         : Inside login() and the email is: faizshiraji@gmail.com
+2020-04-30 02:10:07.476  INFO 8432 --- [http-nio-8080-exec-7] c.d.f.controllers.FlightController       : Inside findFlights() From:AUS TO:NYCDeparture Date: Mon Feb 05 00:00:00 BDT 2018
+2020-04-30 02:10:07.515  INFO 8432 --- [http-nio-8080-exec-7] c.d.f.controllers.FlightController       : Flight Found are: [Flight [flightNumber=AA1, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 03:14:07.0], Flight [flightNumber=AA2, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 05:14:07.0], Flight [flightNumber=AA3, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 06:14:07.0], Flight [flightNumber=SW1, operatingAirlines=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 07:14:07.0]]
+2020-04-30 02:10:34.334  INFO 8432 --- [http-nio-8080-exec-10] c.d.f.controllers.ReservationController  : showCompleteReservation() invoked with the Flight Id: 1
+2020-04-30 02:10:34.397  INFO 8432 --- [http-nio-8080-exec-10] c.d.f.controllers.ReservationController  : Flight is: Flight [flightNumber=AA1, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 03:14:07.0]
+2020-04-30 02:10:57.179  INFO 8432 --- [http-nio-8080-exec-3] c.d.f.controllers.ReservationController  : completeReservation() ReservationRequest [flightId=1, passengerFirstName=Faiz, passengerLastName=Doller, passengerEmail=faizshiraji@gmail.com, passengerPhone=01791631664, nameOnTheCard=1111, cardNumber=1111, expirationDate=111, securityCode=111]
+2020-04-30 02:10:57.179  INFO 8432 --- [http-nio-8080-exec-3] c.d.f.services.ReservationServiceImpl    : Inside bookFlight()
+2020-04-30 02:10:57.179  INFO 8432 --- [http-nio-8080-exec-3] c.d.f.services.ReservationServiceImpl    : Fetching flight for flight Id: 1
+2020-04-30 02:10:57.183  INFO 8432 --- [http-nio-8080-exec-3] c.d.f.services.ReservationServiceImpl    : Saving the passenger: com.doller.flightreservation.entities.Passenger@3be4c8c6
+2020-04-30 02:10:57.236  INFO 8432 --- [http-nio-8080-exec-3] c.d.f.services.ReservationServiceImpl    : Saving the reservation: com.doller.flightreservation.entities.Reservation@4a63c43a
+2020-04-30 02:10:57.252  INFO 8432 --- [http-nio-8080-exec-3] c.d.f.services.ReservationServiceImpl    : Generating the itinerary
+2020-04-30 02:10:57.252  INFO 8432 --- [http-nio-8080-exec-3] c.d.flightreservation.util.PDFGenerator  : generateItinerary()
+2020-04-30 02:10:57.575  INFO 8432 --- [http-nio-8080-exec-3] c.d.f.services.ReservationServiceImpl    : Emailing the Itinerary
+2020-04-30 02:10:57.576  INFO 8432 --- [http-nio-8080-exec-3] c.d.flightreservation.util.EmailUtil     : Inside sendItinerary()
+2020-04-30 02:11:27.461  INFO 8432 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-30 02:11:27.473  INFO 8432 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 02:11:27.473  INFO 8432 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 02:11:27.473  INFO 8432 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-30 02:11:27.489  INFO 8432 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,12 +1,10 @@
 package com.doller.flightreservation.entities;
 
 import javax.persistence.Entity;
-//import javax.persistence.Table;
 
 
 
 @Entity
-//@Table(name="user")
 public class User extends AbstractEntity {
 
 	private String firstName;
@@ -38,6 +36,9 @@ public class User extends AbstractEntity {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	
+	@Override
+	public String toString() {
+		return "User [firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + ", password=" + password
+				+ "]";
+	}
 }
