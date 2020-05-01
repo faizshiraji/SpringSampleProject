@@ -2,6 +2,7 @@ package com.doller.flightcheckin.integration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
 
 import com.doller.flightcheckin.integration.dto.Reservation;
@@ -14,6 +15,7 @@ public class ReservationRestClientImpl implements ReservationRestClient {
 	private String RESERVATION_REST_URL;
 
 	@Override
+	@Transactional
 	public Reservation findReservation(Long id) {
 
 		RestTemplate restTemplate = new RestTemplate();

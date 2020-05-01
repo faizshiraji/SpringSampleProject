@@ -145,3 +145,704 @@
 2020-04-30 13:36:00 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-04-30 13:36:00 - HikariPool-1 - Shutdown initiated...
 2020-04-30 13:36:00 - HikariPool-1 - Shutdown completed.
+2020-05-01 01:07:39 - Starting FlightreservationApplication on Doller-LNV with PID 5880 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-05-01 01:07:39 - No active profile set, falling back to default profiles: default
+2020-05-01 01:07:41 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 01:07:41 - Finished Spring Data repository scanning in 235ms. Found 5 JPA repository interfaces.
+2020-05-01 01:07:43 - Tomcat initialized with port(s): 8080 (http)
+2020-05-01 01:07:43 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 01:07:43 - Starting service [Tomcat]
+2020-05-01 01:07:43 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 01:07:44 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-01 01:07:44 - Initializing Spring embedded WebApplicationContext
+2020-05-01 01:07:44 - Root WebApplicationContext: initialization completed in 4583 ms
+2020-05-01 01:07:44 - HikariPool-1 - Starting...
+2020-05-01 01:07:45 - HikariPool-1 - Start completed.
+2020-05-01 01:07:45 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-01 01:07:45 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 01:07:46 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 01:07:46 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-01 01:07:48 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 01:07:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 01:07:49 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-01 01:07:50 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@305552d6, org.springframework.security.web.context.SecurityContextPersistenceFilter@77ea806f, org.springframework.security.web.header.HeaderWriterFilter@6def0632, org.springframework.security.web.authentication.logout.LogoutFilter@1de7f898, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14a1769d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@afee63, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@729cd862, org.springframework.security.web.session.SessionManagementFilter@61808ecd, org.springframework.security.web.access.ExceptionTranslationFilter@239b98cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36463b09]
+2020-05-01 01:07:50 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 01:07:51 - Adding welcome page: ServletContext resource [/index.html]
+2020-05-01 01:07:51 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 01:07:51 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-05-01 01:07:51 - Started FlightreservationApplication in 13.061 seconds (JVM running for 17.659)
+2020-05-01 01:08:41 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 01:08:41 - Initializing Servlet 'dispatcherServlet'
+2020-05-01 01:08:41 - Completed initialization in 18 ms
+2020-05-01 01:08:44 - Inside showRegistrationPage()
+2020-05-01 01:09:04 - Inside register()User [firstName=Faiz, lastName=Shiraji, email=faizshiraji@gmail.com, password=shiraji]
+2020-05-01 01:09:04 - Servlet.service() for servlet [dispatcherServlet] in context with path [/flightreservation] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.doller.flightreservation.controllers.UserController.register(UserController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-05-01 01:12:06 - Application shutdown requested.
+2020-05-01 01:12:06 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-01 01:12:06 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 01:12:06 - HikariPool-1 - Shutdown initiated...
+2020-05-01 01:12:06 - HikariPool-1 - Shutdown completed.
+2020-05-01 01:15:52 - Starting FlightreservationApplication on Doller-LNV with PID 8216 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-05-01 01:15:52 - No active profile set, falling back to default profiles: default
+2020-05-01 01:15:53 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 01:15:53 - Finished Spring Data repository scanning in 103ms. Found 5 JPA repository interfaces.
+2020-05-01 01:15:54 - Tomcat initialized with port(s): 8080 (http)
+2020-05-01 01:15:54 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 01:15:54 - Starting service [Tomcat]
+2020-05-01 01:15:54 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 01:15:54 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-01 01:15:54 - Initializing Spring embedded WebApplicationContext
+2020-05-01 01:15:54 - Root WebApplicationContext: initialization completed in 2222 ms
+2020-05-01 01:15:54 - HikariPool-1 - Starting...
+2020-05-01 01:15:54 - HikariPool-1 - Start completed.
+2020-05-01 01:15:55 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-01 01:15:55 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 01:15:55 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 01:15:55 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-01 01:15:56 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 01:15:56 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 01:15:57 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-01 01:15:57 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2fba0dac, org.springframework.security.web.context.SecurityContextPersistenceFilter@40c76f5a, org.springframework.security.web.header.HeaderWriterFilter@1182413a, org.springframework.security.web.authentication.logout.LogoutFilter@2cee5365, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5546e754, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@650a1aff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b2a4332, org.springframework.security.web.session.SessionManagementFilter@6b9697ae, org.springframework.security.web.access.ExceptionTranslationFilter@7ead1d80, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@762bf32d]
+2020-05-01 01:15:57 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 01:15:57 - Adding welcome page: ServletContext resource [/index.html]
+2020-05-01 01:15:58 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 01:15:58 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-05-01 01:15:58 - Started FlightreservationApplication in 6.541 seconds (JVM running for 8.354)
+2020-05-01 01:16:28 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 01:16:29 - Initializing Servlet 'dispatcherServlet'
+2020-05-01 01:16:29 - Completed initialization in 16 ms
+2020-05-01 01:16:29 - Inside showRegistrationPage()
+2020-05-01 01:16:46 - Inside register()User [firstName=Faiz, lastName=Shiraji, email=faizshiraji@gmail.com, password=shiraji]
+2020-05-01 01:16:46 - Servlet.service() for servlet [dispatcherServlet] in context with path [/flightreservation] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.doller.flightreservation.controllers.UserController.register(UserController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-05-01 01:18:44 - Application shutdown requested.
+2020-05-01 01:18:44 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-01 01:18:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 01:18:44 - HikariPool-1 - Shutdown initiated...
+2020-05-01 01:18:44 - HikariPool-1 - Shutdown completed.
+2020-05-01 01:19:43 - Starting FlightreservationApplication on Doller-LNV with PID 15480 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-05-01 01:19:43 - No active profile set, falling back to default profiles: default
+2020-05-01 01:19:44 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 01:19:44 - Finished Spring Data repository scanning in 129ms. Found 5 JPA repository interfaces.
+2020-05-01 01:19:45 - Tomcat initialized with port(s): 8080 (http)
+2020-05-01 01:19:45 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 01:19:45 - Starting service [Tomcat]
+2020-05-01 01:19:45 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 01:19:46 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-01 01:19:46 - Initializing Spring embedded WebApplicationContext
+2020-05-01 01:19:46 - Root WebApplicationContext: initialization completed in 2906 ms
+2020-05-01 01:19:46 - HikariPool-1 - Starting...
+2020-05-01 01:19:46 - HikariPool-1 - Start completed.
+2020-05-01 01:19:46 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-01 01:19:47 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 01:19:47 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 01:19:47 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-01 01:19:48 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 01:19:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 01:19:49 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-01 01:19:49 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21be14c2, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d512652, org.springframework.security.web.header.HeaderWriterFilter@2b9aeedb, org.springframework.security.web.authentication.logout.LogoutFilter@7ef41ca2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b96f8b0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@781c2497, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19105a87, org.springframework.security.web.session.SessionManagementFilter@44da7eb3, org.springframework.security.web.access.ExceptionTranslationFilter@6b09ce57, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@74b1838]
+2020-05-01 01:19:50 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 01:19:50 - Adding welcome page: ServletContext resource [/index.html]
+2020-05-01 01:19:50 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 01:19:50 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-05-01 01:19:50 - Started FlightreservationApplication in 7.973 seconds (JVM running for 9.832)
+2020-05-01 01:20:22 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 01:20:22 - Initializing Servlet 'dispatcherServlet'
+2020-05-01 01:20:22 - Completed initialization in 68 ms
+2020-05-01 01:20:25 - Inside showRegistrationPage()
+2020-05-01 01:20:44 - Inside register()User [firstName=Faiz, lastName=Shiraji, email=faizshiraji@gmail.com, password=shiraji]
+2020-05-01 01:20:45 - Servlet.service() for servlet [dispatcherServlet] in context with path [/flightreservation] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.doller.flightreservation.controllers.UserController.register(UserController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-05-01 01:21:02 - Application shutdown requested.
+2020-05-01 01:21:02 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-01 01:21:02 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 01:21:02 - HikariPool-1 - Shutdown initiated...
+2020-05-01 01:21:02 - HikariPool-1 - Shutdown completed.
+2020-05-01 01:35:00 - Starting FlightreservationApplication on Doller-LNV with PID 14252 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-05-01 01:35:00 - No active profile set, falling back to default profiles: default
+2020-05-01 01:35:02 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 01:35:02 - Finished Spring Data repository scanning in 140ms. Found 5 JPA repository interfaces.
+2020-05-01 01:35:03 - Tomcat initialized with port(s): 8080 (http)
+2020-05-01 01:35:03 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 01:35:03 - Starting service [Tomcat]
+2020-05-01 01:35:03 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 01:35:03 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-01 01:35:03 - Initializing Spring embedded WebApplicationContext
+2020-05-01 01:35:03 - Root WebApplicationContext: initialization completed in 2424 ms
+2020-05-01 01:35:03 - HikariPool-1 - Starting...
+2020-05-01 01:35:03 - HikariPool-1 - Start completed.
+2020-05-01 01:35:04 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-01 01:35:04 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 01:35:04 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 01:35:04 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-01 01:35:05 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 01:35:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 01:35:06 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-01 01:35:06 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d283d1, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f642bf, org.springframework.security.web.header.HeaderWriterFilter@2df3545d, org.springframework.security.web.authentication.logout.LogoutFilter@2c2e3460, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44aa91e2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75ed125a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66234b0f, org.springframework.security.web.session.SessionManagementFilter@6a6da47a, org.springframework.security.web.access.ExceptionTranslationFilter@4a660b34, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b6def36]
+2020-05-01 01:35:06 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 01:35:06 - Adding welcome page: ServletContext resource [/index.html]
+2020-05-01 01:35:07 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 01:35:07 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-05-01 01:35:07 - Started FlightreservationApplication in 7.061 seconds (JVM running for 8.652)
+2020-05-01 01:35:38 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 01:35:38 - Initializing Servlet 'dispatcherServlet'
+2020-05-01 01:35:38 - Completed initialization in 45 ms
+2020-05-01 01:35:38 - Inside showRegistrationPage()
+2020-05-01 01:35:50 - Inside register()User [firstName=Faiz, lastName=Doller, email=faizshiraji@gmail.com, password=123]
+2020-05-01 01:36:26 - Inside login() and the email is: faizshiraji@gmail.com
+2020-05-01 01:50:29 - Application shutdown requested.
+2020-05-01 01:50:29 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-01 01:50:29 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 01:50:29 - HikariPool-1 - Shutdown initiated...
+2020-05-01 01:50:29 - HikariPool-1 - Shutdown completed.
+2020-05-01 01:56:20 - Starting FlightreservationApplication on Doller-LNV with PID 11500 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-05-01 01:56:20 - No active profile set, falling back to default profiles: default
+2020-05-01 01:56:21 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 01:56:21 - Finished Spring Data repository scanning in 120ms. Found 5 JPA repository interfaces.
+2020-05-01 01:56:22 - Tomcat initialized with port(s): 8080 (http)
+2020-05-01 01:56:22 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 01:56:22 - Starting service [Tomcat]
+2020-05-01 01:56:22 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 01:56:23 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-01 01:56:23 - Initializing Spring embedded WebApplicationContext
+2020-05-01 01:56:23 - Root WebApplicationContext: initialization completed in 2486 ms
+2020-05-01 01:56:23 - HikariPool-1 - Starting...
+2020-05-01 01:56:23 - HikariPool-1 - Start completed.
+2020-05-01 01:56:23 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-01 01:56:24 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 01:56:24 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 01:56:24 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-01 01:56:25 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 01:56:25 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 01:56:26 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-01 01:56:26 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4adf3582, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ef41ca2, org.springframework.security.web.header.HeaderWriterFilter@1a0f349, org.springframework.security.web.authentication.logout.LogoutFilter@4c063cb9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e151e1f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14a1769d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57e4b86c, org.springframework.security.web.session.SessionManagementFilter@49038f97, org.springframework.security.web.access.ExceptionTranslationFilter@7c2b6acb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ffd0114]
+2020-05-01 01:56:26 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 01:56:26 - Adding welcome page: ServletContext resource [/index.html]
+2020-05-01 01:56:26 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 01:56:26 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-05-01 01:56:26 - Started FlightreservationApplication in 7.036 seconds (JVM running for 9.0)
+2020-05-01 01:56:50 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 01:56:50 - Initializing Servlet 'dispatcherServlet'
+2020-05-01 01:56:50 - Completed initialization in 10 ms
+2020-05-01 02:03:47 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s737ms829µs500ns).
+2020-05-01 02:05:11 - Application shutdown requested.
+2020-05-01 02:05:11 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-01 02:05:11 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 02:05:11 - HikariPool-1 - Shutdown initiated...
+2020-05-01 02:05:11 - HikariPool-1 - Shutdown completed.
+2020-05-01 02:05:24 - Starting FlightreservationApplication on Doller-LNV with PID 13864 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-05-01 02:05:24 - No active profile set, falling back to default profiles: default
+2020-05-01 02:05:25 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 02:05:26 - Finished Spring Data repository scanning in 249ms. Found 5 JPA repository interfaces.
+2020-05-01 02:05:27 - Tomcat initialized with port(s): 8080 (http)
+2020-05-01 02:05:27 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 02:05:27 - Starting service [Tomcat]
+2020-05-01 02:05:27 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 02:05:28 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-01 02:05:28 - Initializing Spring embedded WebApplicationContext
+2020-05-01 02:05:28 - Root WebApplicationContext: initialization completed in 3869 ms
+2020-05-01 02:05:28 - HikariPool-1 - Starting...
+2020-05-01 02:05:28 - HikariPool-1 - Start completed.
+2020-05-01 02:05:28 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-01 02:05:29 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 02:05:29 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 02:05:29 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-01 02:05:30 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 02:05:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 02:05:31 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-01 02:05:32 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5be51aa, org.springframework.security.web.context.SecurityContextPersistenceFilter@790ac3e0, org.springframework.security.web.header.HeaderWriterFilter@49ced9c7, org.springframework.security.web.authentication.logout.LogoutFilter@6c6928c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2cee5365, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b170932, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3302035b, org.springframework.security.web.session.SessionManagementFilter@23ea8830, org.springframework.security.web.access.ExceptionTranslationFilter@19bfbe28, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5c5a91b4]
+2020-05-01 02:05:32 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 02:05:32 - Adding welcome page: ServletContext resource [/index.html]
+2020-05-01 02:05:32 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 02:05:32 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-05-01 02:05:32 - Started FlightreservationApplication in 9.435 seconds (JVM running for 12.052)
+2020-05-01 02:05:37 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 02:05:37 - Initializing Servlet 'dispatcherServlet'
+2020-05-01 02:05:37 - Completed initialization in 20 ms
+2020-05-01 02:05:37 - Inside showLoginPage()
+2020-05-01 02:05:47 - Inside login() and the email is: faizshiraji@gmail.com
+2020-05-01 02:08:30 - Inside login() and the email is: faizshiraji@gmail.com
+2020-05-01 02:08:58 - Application shutdown requested.
+2020-05-01 02:08:58 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-01 02:08:58 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 02:08:58 - HikariPool-1 - Shutdown initiated...
+2020-05-01 02:08:58 - HikariPool-1 - Shutdown completed.
+2020-05-01 02:15:38 - Starting FlightreservationApplication on Doller-LNV with PID 15292 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-05-01 02:15:38 - No active profile set, falling back to default profiles: default
+2020-05-01 02:15:39 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 02:15:39 - Finished Spring Data repository scanning in 100ms. Found 5 JPA repository interfaces.
+2020-05-01 02:15:40 - Tomcat initialized with port(s): 8080 (http)
+2020-05-01 02:15:40 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 02:15:40 - Starting service [Tomcat]
+2020-05-01 02:15:40 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 02:15:40 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-01 02:15:40 - Initializing Spring embedded WebApplicationContext
+2020-05-01 02:15:40 - Root WebApplicationContext: initialization completed in 2091 ms
+2020-05-01 02:15:41 - HikariPool-1 - Starting...
+2020-05-01 02:15:41 - HikariPool-1 - Start completed.
+2020-05-01 02:15:41 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-01 02:15:41 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 02:15:41 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 02:15:42 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-01 02:15:43 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 02:15:43 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 02:15:43 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-01 02:15:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2120bed, org.springframework.security.web.context.SecurityContextPersistenceFilter@781c2497, org.springframework.security.web.header.HeaderWriterFilter@5e69cf07, org.springframework.security.web.authentication.logout.LogoutFilter@14a1769d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70c491b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c6928c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@566fe83c, org.springframework.security.web.session.SessionManagementFilter@5dfc2a4, org.springframework.security.web.access.ExceptionTranslationFilter@1a7163e3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@19105a87]
+2020-05-01 02:15:44 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 02:15:44 - Adding welcome page: ServletContext resource [/index.html]
+2020-05-01 02:15:44 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 02:15:44 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-05-01 02:15:44 - Started FlightreservationApplication in 6.284 seconds (JVM running for 7.851)
+2020-05-01 02:15:48 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 02:15:48 - Initializing Servlet 'dispatcherServlet'
+2020-05-01 02:15:48 - Completed initialization in 16 ms
+2020-05-01 02:19:35 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-05-01 02:20:03 - Inside showLoginPage()
+2020-05-01 02:20:03 - Inside showLoginPage()
+2020-05-01 02:20:24 - Inside login() and the email is: faizshiraji@gmail.com
+2020-05-01 02:22:18 - Application shutdown requested.
+2020-05-01 02:22:18 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-01 02:22:18 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 02:22:18 - HikariPool-1 - Shutdown initiated...
+2020-05-01 02:22:18 - HikariPool-1 - Shutdown completed.
+2020-05-01 02:27:33 - Starting FlightreservationApplication on Doller-LNV with PID 24024 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-05-01 02:27:33 - No active profile set, falling back to default profiles: default
+2020-05-01 02:27:34 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 02:27:34 - Finished Spring Data repository scanning in 171ms. Found 5 JPA repository interfaces.
+2020-05-01 02:27:35 - Tomcat initialized with port(s): 8080 (http)
+2020-05-01 02:27:35 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 02:27:35 - Starting service [Tomcat]
+2020-05-01 02:27:35 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 02:27:36 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-01 02:27:36 - Initializing Spring embedded WebApplicationContext
+2020-05-01 02:27:36 - Root WebApplicationContext: initialization completed in 3038 ms
+2020-05-01 02:27:36 - HikariPool-1 - Starting...
+2020-05-01 02:27:36 - HikariPool-1 - Start completed.
+2020-05-01 02:27:37 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-01 02:27:37 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 02:27:37 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 02:27:37 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-01 02:27:38 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 02:27:38 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 02:27:39 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-01 02:27:40 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70f4f89e, org.springframework.security.web.context.SecurityContextPersistenceFilter@63485d7, org.springframework.security.web.header.HeaderWriterFilter@2b9e69fb, org.springframework.security.web.authentication.logout.LogoutFilter@3c60c681, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59a09be, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d512652, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@634aa81e, org.springframework.security.web.session.SessionManagementFilter@5c4f4330, org.springframework.security.web.access.ExceptionTranslationFilter@650a1aff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bf2aa32]
+2020-05-01 02:27:40 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 02:27:40 - Adding welcome page: ServletContext resource [/index.html]
+2020-05-01 02:27:41 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 02:27:41 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-05-01 02:27:41 - Started FlightreservationApplication in 8.532 seconds (JVM running for 10.129)
+2020-05-01 02:27:45 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 02:27:45 - Initializing Servlet 'dispatcherServlet'
+2020-05-01 02:27:45 - Completed initialization in 25 ms
+2020-05-01 02:27:46 - Inside showLoginPage()
+2020-05-01 02:27:58 - Inside login() and the email is: faizshiraji@gmail.com
+2020-05-01 02:28:11 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-05-01 02:28:19 - Inside login() and the email is: faizshiraji@gmail.com
+2020-05-01 02:30:32 - Application shutdown requested.
+2020-05-01 02:30:32 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-01 02:30:32 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 02:30:32 - HikariPool-1 - Shutdown initiated...
+2020-05-01 02:30:33 - HikariPool-1 - Shutdown completed.
+2020-05-01 02:33:50 - Starting FlightreservationApplication on Doller-LNV with PID 8036 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-05-01 02:33:50 - No active profile set, falling back to default profiles: default
+2020-05-01 02:33:51 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 02:33:51 - Finished Spring Data repository scanning in 120ms. Found 5 JPA repository interfaces.
+2020-05-01 02:33:52 - Tomcat initialized with port(s): 8080 (http)
+2020-05-01 02:33:52 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 02:33:52 - Starting service [Tomcat]
+2020-05-01 02:33:52 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 02:33:52 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-01 02:33:52 - Initializing Spring embedded WebApplicationContext
+2020-05-01 02:33:52 - Root WebApplicationContext: initialization completed in 2529 ms
+2020-05-01 02:33:53 - HikariPool-1 - Starting...
+2020-05-01 02:33:53 - HikariPool-1 - Start completed.
+2020-05-01 02:33:53 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-01 02:33:53 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 02:33:53 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 02:33:53 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-01 02:33:55 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 02:33:55 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 02:33:56 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-01 02:33:56 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22b82ddf, org.springframework.security.web.context.SecurityContextPersistenceFilter@4416e18d, org.springframework.security.web.header.HeaderWriterFilter@56d6a1b1, org.springframework.security.web.authentication.logout.LogoutFilter@7f1f60a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3120495d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c60c681, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28bf82d9, org.springframework.security.web.session.SessionManagementFilter@4e4f4092, org.springframework.security.web.access.ExceptionTranslationFilter@2cee5365, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21733cbe]
+2020-05-01 02:33:56 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 02:33:56 - Adding welcome page: ServletContext resource [/index.html]
+2020-05-01 02:33:56 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 02:33:56 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-05-01 02:33:56 - Started FlightreservationApplication in 7.239 seconds (JVM running for 8.92)
+2020-05-01 02:34:02 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 02:34:02 - Initializing Servlet 'dispatcherServlet'
+2020-05-01 02:34:02 - Completed initialization in 15 ms
+2020-05-01 02:34:11 - Inside showLoginPage()
+2020-05-01 02:34:20 - Inside login() and the email is: faizshiraji@gmail.com
+2020-05-01 02:36:33 - Inside login() and the email is: faizshiraji@gmail.com
+2020-05-01 02:36:34 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s922ms982µs100ns).
+2020-05-01 02:54:15 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m40s459ms927µs400ns).
+2020-05-01 02:55:11 - Inside showLoginPage()
+2020-05-01 02:55:14 - Inside showLoginPage()
+2020-05-01 02:56:01 - Inside login() and the email is: faizshiraji@gmail.com
+2020-05-01 02:56:16 - Inside showAddFlight()
+2020-05-01 02:56:49 - Application shutdown requested.
+2020-05-01 02:56:49 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-01 02:56:49 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 02:56:49 - HikariPool-1 - Shutdown initiated...
+2020-05-01 02:56:49 - HikariPool-1 - Shutdown completed.
+2020-05-01 15:26:57 - Starting FlightreservationApplication on Doller-LNV with PID 12716 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-05-01 15:26:57 - No active profile set, falling back to default profiles: default
+2020-05-01 15:27:00 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 15:27:00 - Finished Spring Data repository scanning in 149ms. Found 5 JPA repository interfaces.
+2020-05-01 15:27:02 - Tomcat initialized with port(s): 8080 (http)
+2020-05-01 15:27:02 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 15:27:02 - Starting service [Tomcat]
+2020-05-01 15:27:02 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 15:27:03 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-01 15:27:03 - Initializing Spring embedded WebApplicationContext
+2020-05-01 15:27:03 - Root WebApplicationContext: initialization completed in 5314 ms
+2020-05-01 15:27:03 - HikariPool-1 - Starting...
+2020-05-01 15:27:04 - HikariPool-1 - Start completed.
+2020-05-01 15:27:04 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-01 15:27:04 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 15:27:05 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 15:27:05 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-01 15:27:07 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 15:27:07 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 15:27:09 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-01 15:27:10 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f61e002, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ce3409b, org.springframework.security.web.header.HeaderWriterFilter@34fcd292, org.springframework.security.web.authentication.logout.LogoutFilter@77ccded4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66234b0f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56da96b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@334540a0, org.springframework.security.web.session.SessionManagementFilter@7be38eba, org.springframework.security.web.access.ExceptionTranslationFilter@7b1a30e5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@dd737ea]
+2020-05-01 15:27:10 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 15:27:10 - Adding welcome page: ServletContext resource [/index.html]
+2020-05-01 15:27:11 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 15:27:11 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-05-01 15:27:11 - Started FlightreservationApplication in 15.166 seconds (JVM running for 17.588)
+2020-05-01 15:37:00 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 15:37:00 - Initializing Servlet 'dispatcherServlet'
+2020-05-01 15:37:00 - Completed initialization in 19 ms
+2020-05-01 15:38:23 - Inside findReservation() for id:1
+2020-05-01 15:38:54 - Inside findReservation() for id:1
+2020-05-01 17:14:34 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m30s31ms932µs800ns).
+2020-05-01 17:48:33 - Inside findReservation() for id:1
+2020-05-01 17:48:54 - Inside findReservation() for id:1
+2020-05-01 17:49:39 - Inside findReservation() for id:1
+2020-05-01 20:37:26 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h46m50s978ms326µs500ns).
+2020-05-01 20:37:39 - Inside findReservation() for id:1
+2020-05-01 20:44:41 - Inside findReservation() for id:1
+2020-05-01 20:45:01 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m35s13ms873µs800ns).
+2020-05-01 20:45:45 - Inside findReservation() for id:1
+2020-05-01 21:49:07 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m35s760ms298µs900ns).
+2020-05-01 21:50:00 - Inside findReservation() for id:1
+2020-05-01 21:57:29 - Application shutdown requested.
+2020-05-01 21:57:29 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-01 21:57:29 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 21:57:29 - HikariPool-1 - Shutdown initiated...
+2020-05-01 21:57:29 - HikariPool-1 - Shutdown completed.
+2020-05-01 21:57:36 - Starting FlightreservationApplication on Doller-LNV with PID 15540 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-05-01 21:57:36 - No active profile set, falling back to default profiles: default
+2020-05-01 21:57:37 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 21:57:37 - Finished Spring Data repository scanning in 94ms. Found 5 JPA repository interfaces.
+2020-05-01 21:57:37 - Tomcat initialized with port(s): 8080 (http)
+2020-05-01 21:57:37 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 21:57:37 - Starting service [Tomcat]
+2020-05-01 21:57:37 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 21:57:38 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-01 21:57:38 - Initializing Spring embedded WebApplicationContext
+2020-05-01 21:57:38 - Root WebApplicationContext: initialization completed in 1974 ms
+2020-05-01 21:57:38 - HikariPool-1 - Starting...
+2020-05-01 21:57:38 - HikariPool-1 - Start completed.
+2020-05-01 21:57:38 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-01 21:57:38 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 21:57:38 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 21:57:39 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-01 21:57:39 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 21:57:39 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 21:57:40 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-01 21:57:41 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@464ede1f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4cb24e2, org.springframework.security.web.header.HeaderWriterFilter@6d7740f0, org.springframework.security.web.authentication.logout.LogoutFilter@750cd36d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2296127, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d0e1a9a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64910b2d, org.springframework.security.web.session.SessionManagementFilter@2b2a4332, org.springframework.security.web.access.ExceptionTranslationFilter@cfd5cd2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7103745]
+2020-05-01 21:57:41 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 21:57:41 - Adding welcome page: ServletContext resource [/index.html]
+2020-05-01 21:57:41 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 21:57:41 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-05-01 21:57:41 - Started FlightreservationApplication in 5.932 seconds (JVM running for 8.001)
+2020-05-01 21:58:23 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 21:58:23 - Initializing Servlet 'dispatcherServlet'
+2020-05-01 21:58:23 - Completed initialization in 18 ms
+2020-05-01 21:58:30 - Inside findReservation() for id:1
+2020-05-01 22:00:52 - Inside findReservation() for id:1
+2020-05-01 22:01:52 - Inside findReservation() for id:1
+2020-05-01 22:02:07 - Inside findReservation() for id:1
+2020-05-01 22:07:01 - Inside findReservation() for id:1
+2020-05-01 22:07:33 - Inside findReservation() for id:1
+2020-05-01 22:10:05 - Inside findReservation() for id:1
+2020-05-01 22:10:06 - Inside findReservation() for id:1
+2020-05-01 22:15:17 - Inside findReservation() for id:1
+2020-05-01 22:15:19 - Inside findReservation() for id:1
+2020-05-01 22:16:58 - Inside findReservation() for id:1
+2020-05-01 22:16:59 - Inside findReservation() for id:1
+2020-05-01 22:19:53 - Inside findReservation() for id:1
+2020-05-01 22:19:57 - Inside findReservation() for id:1
+2020-05-01 22:22:11 - Inside findReservation() for id:1
+2020-05-01 22:22:13 - Inside findReservation() for id:1
+2020-05-01 22:24:47 - Inside findReservation() for id:1
+2020-05-01 22:24:51 - Inside findReservation() for id:1
+2020-05-01 22:26:27 - Inside findReservation() for id:1
+2020-05-01 22:26:29 - Inside findReservation() for id:1
+2020-05-01 22:27:58 - Inside findReservation() for id:1
+2020-05-01 22:28:43 - Inside findReservation() for id:1
+2020-05-01 22:28:46 - Inside findReservation() for id:1
+2020-05-01 22:28:51 - Inside the updateReservation() for com.doller.flightreservation.dto.ReservationUpdateRequest@745a6df7
+2020-05-01 22:28:51 - Saving Reservation
+2020-05-01 22:32:04 - Inside findReservation() for id:1
+2020-05-01 22:32:37 - Inside findReservation() for id:1
+2020-05-01 22:33:10 - Inside findReservation() for id:1
+2020-05-01 22:33:30 - Inside findReservation() for id:1
+2020-05-01 22:33:45 - Inside findReservation() for id:1
+2020-05-01 22:34:06 - Inside findReservation() for id:3
+2020-05-01 22:34:15 - Inside the updateReservation() for com.doller.flightreservation.dto.ReservationUpdateRequest@3a530655
+2020-05-01 22:34:15 - Saving Reservation
+2020-05-01 22:35:43 - Inside findReservation() for id:1
+2020-05-01 22:36:13 - Inside findReservation() for id:4
+2020-05-01 22:36:18 - Inside the updateReservation() for com.doller.flightreservation.dto.ReservationUpdateRequest@6e7e32bf
+2020-05-01 22:36:18 - Saving Reservation

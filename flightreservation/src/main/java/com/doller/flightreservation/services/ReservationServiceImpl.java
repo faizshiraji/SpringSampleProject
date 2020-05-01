@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.doller.flightreservation.dto.ReservationRequest;
 import com.doller.flightreservation.entities.Flight;
@@ -15,6 +16,7 @@ import com.doller.flightreservation.repos.PassengerRepository;
 import com.doller.flightreservation.repos.ReservationRepository;
 import com.doller.flightreservation.util.EmailUtil;
 import com.doller.flightreservation.util.PDFGenerator;
+
 
 @Service
 public class ReservationServiceImpl implements ReservationService {
@@ -39,7 +41,9 @@ public class ReservationServiceImpl implements ReservationService {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ReservationServiceImpl.class);
 	
+	
 	@Override
+	@Transactional
 	public Reservation bookFlight(ReservationRequest request) {
 
 		LOGGER.info("Inside bookFlight()");
