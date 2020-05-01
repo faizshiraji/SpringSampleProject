@@ -846,3 +846,70 @@ java.lang.NullPointerException: null
 2020-05-01 22:36:13 - Inside findReservation() for id:4
 2020-05-01 22:36:18 - Inside the updateReservation() for com.doller.flightreservation.dto.ReservationUpdateRequest@6e7e32bf
 2020-05-01 22:36:18 - Saving Reservation
+2020-05-01 23:03:53 - Application shutdown requested.
+2020-05-01 23:03:54 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-01 23:03:54 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 23:03:54 - HikariPool-1 - Shutdown initiated...
+2020-05-01 23:03:54 - HikariPool-1 - Shutdown completed.
+2020-05-01 23:31:29 - Starting FlightreservationApplication on Doller-LNV with PID 3888 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-05-01 23:31:29 - No active profile set, falling back to default profiles: default
+2020-05-01 23:31:31 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 23:31:31 - Finished Spring Data repository scanning in 127ms. Found 5 JPA repository interfaces.
+2020-05-01 23:31:31 - Tomcat initialized with port(s): 8080 (http)
+2020-05-01 23:31:31 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 23:31:31 - Starting service [Tomcat]
+2020-05-01 23:31:31 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 23:31:32 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-01 23:31:32 - Initializing Spring embedded WebApplicationContext
+2020-05-01 23:31:32 - Root WebApplicationContext: initialization completed in 2249 ms
+2020-05-01 23:31:32 - HikariPool-1 - Starting...
+2020-05-01 23:31:32 - HikariPool-1 - Start completed.
+2020-05-01 23:31:32 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-01 23:31:32 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 23:31:33 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 23:31:33 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-01 23:31:34 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 23:31:34 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 23:31:34 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-01 23:31:35 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b458cd6, org.springframework.security.web.context.SecurityContextPersistenceFilter@762bf32d, org.springframework.security.web.header.HeaderWriterFilter@70d3cdbf, org.springframework.security.web.authentication.logout.LogoutFilter@5c5a91b4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b1a30e5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b2a4332, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c2c44e8, org.springframework.security.web.session.SessionManagementFilter@658e7ead, org.springframework.security.web.access.ExceptionTranslationFilter@4c5da4f9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7757025d]
+2020-05-01 23:31:35 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 23:31:35 - Adding welcome page: ServletContext resource [/index.html]
+2020-05-01 23:31:35 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 23:31:35 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-05-01 23:31:35 - Started FlightreservationApplication in 6.266 seconds (JVM running for 8.191)
+2020-05-02 00:26:17 - Application shutdown requested.
+2020-05-02 00:26:17 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-02 00:26:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-02 00:26:17 - HikariPool-1 - Shutdown initiated...
+2020-05-02 00:26:17 - HikariPool-1 - Shutdown completed.
+2020-05-02 00:26:25 - Starting FlightreservationApplication on Doller-LNV with PID 21284 (C:\Users\dolow\git\SpringTTLProject\flightreservation\target\classes started by dolow in C:\Users\dolow\git\SpringTTLProject\flightreservation)
+2020-05-02 00:26:25 - No active profile set, falling back to default profiles: default
+2020-05-02 00:26:26 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-02 00:26:27 - Finished Spring Data repository scanning in 136ms. Found 5 JPA repository interfaces.
+2020-05-02 00:26:27 - Tomcat initialized with port(s): 8080 (http)
+2020-05-02 00:26:27 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-02 00:26:27 - Starting service [Tomcat]
+2020-05-02 00:26:27 - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-02 00:26:28 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-05-02 00:26:28 - Initializing Spring embedded WebApplicationContext
+2020-05-02 00:26:28 - Root WebApplicationContext: initialization completed in 2702 ms
+2020-05-02 00:26:28 - HikariPool-1 - Starting...
+2020-05-02 00:26:28 - HikariPool-1 - Start completed.
+2020-05-02 00:26:29 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-02 00:26:29 - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-02 00:26:29 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-02 00:26:29 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-02 00:26:30 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-02 00:26:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-02 00:26:31 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-02 00:26:32 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7babed9e, org.springframework.security.web.context.SecurityContextPersistenceFilter@70f4f89e, org.springframework.security.web.header.HeaderWriterFilter@4d0e1a9a, org.springframework.security.web.authentication.logout.LogoutFilter@fe42a09, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74b1838, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64c8fcfb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2353354a, org.springframework.security.web.session.SessionManagementFilter@2ba9f986, org.springframework.security.web.access.ExceptionTranslationFilter@b5c902, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6987a133]
+2020-05-02 00:26:32 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-02 00:26:32 - Adding welcome page: ServletContext resource [/index.html]
+2020-05-02 00:26:33 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-02 00:26:35 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2020-05-02 00:26:35 - Started FlightreservationApplication in 10.473 seconds (JVM running for 13.521)
+2020-05-02 00:30:53 - Application shutdown requested.
+2020-05-02 00:30:53 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-02 00:30:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-02 00:30:53 - HikariPool-1 - Shutdown initiated...
+2020-05-02 00:30:53 - HikariPool-1 - Shutdown completed.
