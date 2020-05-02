@@ -25,7 +25,6 @@ public class LocationRESTController {
 	@GetMapping
 	public List<Location> getLocations(){
 		return locationRepository.findAll();
-		
 	}
 	
 	@PostMapping
