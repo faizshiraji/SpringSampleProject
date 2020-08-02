@@ -1,2 +1,2 @@
-# SpringTTLProject
-Here all my Spring Tutorial Projects
+# SpringSampleProject
+Here my few Sample Projects
